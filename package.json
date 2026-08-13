@@ -22,5 +22,6 @@
   },
   "pnpm": {
     "onlyBuiltDependencies": ["esbuild"]
-  }
+  },
+  "packageManager": "pnpm@9.29.0"
 }
