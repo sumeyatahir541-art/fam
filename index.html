@@ -16,36 +16,26 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}
 .hidden{display:none!important}.app{min-height:100vh}.shell{display:flex;min-height:100vh}
 .sidebar{width:250px;background:#0b1220;color:#fff;padding:22px 16px;position:fixed;inset:0 auto 0 0;z-index:20;display:flex;flex-direction:column}
 .brand{display:flex;align-items:center;gap:12px;padding:6px 10px 28px}.brandLogo{width:132px;height:auto}.loginLogo{width:180px;max-width:100%;height:auto;margin-bottom:15px}
-.logo{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,#2563eb,#7c3aed);display:grid;place-items:center;font-weight:900;letter-spacing:-1px;color:#fff}.brand b{font-size[...]
-.nav{display:grid;gap:6px}.nav button{border:0;background:transparent;color:#cbd5e1;text-align:left;padding:12px 13px;border-radius:11px;font-weight:700;display:flex;align-items:center;gap:10px}.n[...]
+.logo{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,#2563eb,#7c3aed);display:grid;place-items:center;font-weight:900;letter-spacing:-1px;color:#fff}.brand b{font-size:18px}
+.nav{display:grid;gap:6px}.nav button{border:0;background:transparent;color:#cbd5e1;text-align:left;padding:12px 13px;border-radius:11px;font-weight:700;display:flex;align-items:center;gap:10px}.nav button.active{color:#fff;background:linear-gradient(90deg,rgba(255,255,255,0.03),transparent)}
 .sideBottom{margin-top:auto;border-top:1px solid #253047;padding-top:14px}.userMini{padding:10px;color:#cbd5e1;font-size:13px}
-.main{margin-left:250px;width:calc(100% - 250px);padding:24px 28px}.topbar{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:22px}.title h1{margin:0;font-size:28[...]
+.main{margin-left:250px;width:calc(100% - 250px);padding:24px 28px}.topbar{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:22px}.title h1{margin:0;font-size:28px}
 .actions{display:flex;gap:8px;flex-wrap:wrap}
-.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:18px}.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var([...]
-.content{display:none}.content.active{display:block}.panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px;margin-bottom:18px}.panelH[...]
-.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.field{display:grid;gap:6px}.field label{font-size:12px;font-weight:800;color:#344054}.field input,.field select,.field te[...]
+.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:18px}.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
+.content{display:none}.content.active{display:block}.panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px;margin-bottom:18px}.panelHead{display:flex;justify-content:space-between;align-items:center}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.field{display:grid;gap:6px}.field label{font-size:12px;font-weight:800;color:#344054}.field input,.field select,.field textarea{padding:10px;border:1px solid var(--line);border-radius:10px}
 .toolbar{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:15px 0}.filters{display:flex;gap:8px;flex-wrap:wrap}.search{min-width:260px}
-.tableWrap{overflow:auto;border:1px solid var(--line);border-radius:13px}.table{width:100%;border-collapse:collapse;min-width:760px}.table th,.table td{text-align:left;padding:12px 13px;border-bot[...]
-.badge{display:inline-flex;align-items:center;border-radius:999px;padding:5px 9px;font-size:11px;font-weight:900}.badge.green{background:#ecfdf3;color:#027a48}.badge.red{background:#fef3f2;color:#[...]
-.progress{height:8px;background:#eef2f6;border-radius:99px;overflow:hidden}.progress i{display:block;height:100%;background:#2563eb;border-radius:99px;transition:width .6s ease}.empty{padding:35px[...]
-.kpiGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.mini{padding:15px}.mini .big{font-size:22px;font-weight:900;margin-top:5px}.mini p{margin:3px 0 0;color:var(--muted);font-size:1[...]
-.loginWrap{min-height:100vh;display:grid;place-items:center;padding:20px;background:radial-gradient(circle at top right,#e8efff,transparent 35%),#f4f7fb}.login{width:min(430px,100%);padding:28px}.[...]
+.tableWrap{overflow:auto;border:1px solid var(--line);border-radius:13px}.table{width:100%;border-collapse:collapse;min-width:760px}.table th,.table td{text-align:left;padding:12px 13px;border-bottom:1px solid var(--line)}
+.badge{display:inline-flex;align-items:center;border-radius:999px;padding:5px 9px;font-size:11px;font-weight:900}
+.progress{height:8px;background:#eef2f6;border-radius:99px;overflow:hidden}.progress i{display:block;height:100%;background:#2563eb;border-radius:99px;transition:width .6s ease}.empty{padding:35px;text-align:center;color:var(--muted)}
+.kpiGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.mini{padding:15px}.mini .big{font-size:22px;font-weight:900;margin-top:5px}.mini p{margin:3px 0 0;color:var(--muted);font-size:13px}
+.loginWrap{min-height:100vh;display:grid;place-items:center;padding:20px;background:radial-gradient(circle at top right,#e8efff,transparent 35%),#f4f7fb}.login{width:min(430px,100%);padding:28px}
 .notice{padding:12px 14px;border-radius:12px;background:#eff8ff;color:#175cd3;margin-bottom:15px;font-size:13px}.dangerNotice{background:#fef3f2;color:#b42318}
-.modalBack{position:fixed;inset:0;background:#0b122080;z-index:100;display:grid;place-items:center;padding:18px;opacity:0;pointer-events:none;transition:opacity .2s}.modalBack.open{opacity:1;point[...]
-.toast{position:fixed;right:22px;bottom:22px;z-index:200;background:#101828;color:#fff;padding:12px 15px;border-radius:12px;box-shadow:0 14px 35px #0003;max-width:360px;font-size:13px;transform:tr[...]
-.reportCards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}.reportCard{padding:15px}.reportCard small{color:var(--muted);font-weight:800}.reportCard b{display:block;[...]
-.mobileMenu{display:none}
-.skeleton{animation:skeletonPulse 1.5s ease-in-out infinite;background:linear-gradient(90deg,#f2f4f7 25%,#e4e7ec 50%,#f2f4f7 75%);background-size:200% 100%;border-radius:8px}@keyframes skeletonPul[...]
-@media(max-width:1050px){.cards{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:repeat(2,1fr)}.reportCards{grid-template-columns:repeat(2,1fr)} }
-@media(max-width:760px){.sidebar{transform:translateX(-100%);transition:.2s}.sidebar.open{transform:none}.main{margin-left:0;width:100%;padding:18px 14px}.mobileMenu{display:inline-flex}.topbar{al[...]
-@media(max-width:480px){.cards{grid-template-columns:1fr 1fr}.stat .num{font-size:21px}.actions{width:100%}.actions .btn{flex:1}.panel{padding:15px}}
-@media print{.sidebar,.topbar,.actions,.mobileMenu,.btn{display:none!important}.main{margin-left:0;width:100%;padding:0}.panel{box-shadow:none;border:1px solid #ddd}}
-/* Runtime keys form styles */
-.runtime-keys {position:fixed;left:12px;right:12px;top:12px;background:#fff;border:1px solid var(--line);padding:12px;border-radius:10px;z-index:500;box-shadow:var(--shadow)}
-.runtime-keys h4{margin:0 0 8px;font-size:14px}
-.runtime-keys .row{display:flex;gap:8px;flex-wrap:wrap}
-.runtime-keys input{flex:1;padding:8px;border:1px solid var(--line);border-radius:8px}
-.runtime-keys button{padding:8px 10px;border-radius:8px}
+.modalBack{position:fixed;inset:0;background:#0b122080;z-index:100;display:grid;place-items:center;padding:18px;opacity:0;pointer-events:none;transition:opacity .2s}.modalBack.open{opacity:1;pointer-events:auto}
+.toast{position:fixed;right:22px;bottom:22px;z-index:200;background:#101828;color:#fff;padding:12px 15px;border-radius:12px;box-shadow:0 14px 35px #0003;max-width:360px;font-size:13px}
+@media(max-width:1050px){.cards{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:repeat(2,1fr)}.reportCards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.sidebar{transform:translateX(-100%);transition:.2s}.sidebar.open{transform:none}.main{margin-left:0;width:100%;padding:18px 14px}.mobileMenu{display:inline-flex}}
+@media(max-width:480px){.cards{grid-template-columns:1fr 1fr}.actions{width:100%}.panel{padding:15px}}
 </style>
 </head>
 <body>
@@ -121,4 +111,163 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}
   <!-- DASHBOARD -->
   <section id="dashboard" class="content active">
     <div class="cards">
-      <div class="card stat"><div class="statTop"><label>Total shops</label><div class="statIcon">▣</div></div><div class="num" id="sTotal">0</div><div class="sub" id="sActive">0 active</div></[...]
+      <div class="card stat"><div class="statTop"><label>Total shops</label><div class="statIcon">▣</div></div><div class="num" id="sTotal">0</div><div class="sub" id="sActive">0 active</div></div>
+      <div class="card stat"><div class="statTop"><label>Monthly rent</label><div class="statIcon">ET</div></div><div class="num" id="sExpected">0 ETB</div><div class="sub">Expected this month</div></div>
+      <div class="card stat"><div class="statTop"><label>Collected</label><div class="statIcon">✓</div></div><div class="num" id="sCollected">0 ETB</div><div class="sub" id="sCollectionRate">0% collection rate</div></div>
+      <div class="card stat"><div class="statTop"><label>Outstanding</label><div class="statIcon">!</div></div><div class="num" id="sOutstanding">0 ETB</div><div class="sub" id="sDefaulters">0 serious defaulters</div></div>
+    </div>
+
+    <div class="kpiGrid">
+      <div class="card mini"><div class="muted">Collection progress</div><div class="big" id="dashPct">0%</div><div class="progress" style="margin-top:9px"><i id="dashBar" style="width:0%"></i></div></div>
+      <div class="card mini"><div class="muted">Payments this month</div><div class="big" id="dashPayments">0</div><p>Posted transactions</p></div>
+      <div class="card mini"><div class="muted">Average rent</div><div class="big" id="dashAvg">0 ETB</div><p>Across active shops</p></div>
+    </div>
+
+    <div class="panel" style="margin-top:18px">
+      <div class="panelHead"><div><h2>Current month</h2><p id="dashMonth"></p></div><button class="btn small" onclick="go('reports')">View reports</button></div>
+      <div id="dashboardTable"></div>
+    </div>
+  </section>
+
+  <!-- SHOPS -->
+  <section id="shops" class="content">
+    <div class="panel">
+      <div class="panelHead"><div><h2>Shops & tenants</h2><p>Manage shop units, tenant details and occupancy.</p></div><button class="btn blue" onclick="openShopModal()">+ Register shop</button></div>
+      <div class="toolbar">
+        <div class="filters">
+          <input id="shopSearch" class="field search" placeholder="Search shop, tenant, phone..." oninput="renderShops()">
+          <select id="shopStatus" onchange="renderShops()"><option value="all">All statuses</option><option value="active">Active</option><option value="released">Released</option><option value="vacant">Vacant</option></select>
+        </div>
+      </div>
+      <div id="shopsTable"></div>
+    </div>
+  </section>
+
+  <!-- PAYMENTS -->
+  <section id="payments" class="content">
+    <div class="panel">
+      <div class="panelHead"><div><h2>Record rent payment</h2><p>Supports full or partial payments. Reversal keeps the audit trail.</p></div></div>
+      <div id="paymentNotice"></div>
+      <div class="grid">
+        <div class="field"><label>Shop *</label><select id="payShop" onchange="suggestPaymentAmount()"></select></div>
+        <div class="field"><label>For month *</label><input id="payMonth" type="month" onchange="suggestPaymentAmount()"></div>
+        <div class="field"><label>Amount (ETB) *</label><input id="payAmount" type="number" min="0.01" step="0.01"></div>
+        <div class="field"><label>Payment date *</label><input id="payDate" type="date"></div>
+        <div class="field"><label>Method *</label><select id="payMethod"><option>Cash</option><option>Bank Transfer</option><option>Check</option><option>Mobile Money</option></select></div>
+        <div class="field"><label>Reference</label><input id="payRef" placeholder="Receipt / transfer reference"></div>
+        <div class="field full"><label>Note</label><textarea id="payNote" placeholder="Optional note"></textarea></div>
+      </div>
+      <button id="addPaymentBtn" class="btn green" style="margin-top:14px" onclick="addPayment()">Record payment</button>
+    </div>
+    <div class="panel">
+      <div class="panelHead"><div><h2>Payment history</h2><p>Posted and reversed transactions.</p></div>
+        <div class="actions">
+          <input id="paymentSearch" class="field search" placeholder="Search shop, tenant, reference..." oninput="renderPayments()">
+          <button class="btn small" onclick="exportPayments()">Export CSV</button>
+        </div>
+      </div>
+      <div id="paymentsTable"></div>
+    </div>
+  </section>
+
+  <!-- DEFAULTS (Arrears) -->
+  <section id="defaults" class="content">
+    <div class="panel">
+      <div class="panelHead"><div><h2>Arrears & defaults</h2><p>Outstanding rent calculated from registration month through the current month.</p></div></div>
+      <div id="defaultsTable"></div>
+    </div>
+  </section>
+
+  <!-- REPORTS -->
+  <section id="reports" class="content">
+    <div class="panel">
+      <div class="panelHead"><div><h2>Collection reports</h2><p>Expected versus posted collection by month.</p></div>
+        <div class="actions">
+          <select id="reportYear" onchange="renderReports()"></select>
+          <button class="btn small" onclick="exportReport()">Export CSV</button>
+        </div>
+      </div>
+      <div id="reportCards" class="reportCards"></div>
+      <div id="reportsTable"></div>
+    </div>
+  </section>
+
+  <!-- ACTIVITY -->
+  <section id="activity" class="content">
+    <div class="panel">
+      <div class="panelHead"><div><h2>Activity log</h2><p>Audit history for important actions.</p></div></div>
+      <div id="activityTable"></div>
+    </div>
+  </section>
+
+  <!-- USERS (Admin only) -->
+  <section id="users" class="content">
+    <div class="panel">
+      <div class="panelHead"><div><h2>Users & roles</h2><p>Admin-only staff access management.</p></div></div>
+      <div id="usersTable"></div>
+    </div>
+  </section>
+</main>
+</div>
+</div>
+
+<!-- ===================== MODAL ===================== -->
+<div id="modalBack" class="modalBack" onclick="if(event.target.id==='modalBack')closeModal()">
+  <div class="modal"><div class="modalHead"><h3 id="modalTitle">Shop</h3><button class="x" onclick="closeModal()">×</button></div><div id="modalBody"></div></div>
+</div>
+
+<!-- ===================== TOAST ===================== -->
+<div id="toast" class="toast"><span id="toastMsg"></span><div class="toastProgress"></div></div>
+
+<!-- ===================== SCRIPTS ======== -->
+<script type="module">
+  window.FAMI_CONFIG = {
+    SUPABASE_URL: import.meta.env.VITE_SUPABASE_URL || '',
+    SUPABASE_ANON_KEY: import.meta.env.VITE_SUPABASE_ANON_KEY || ''
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script>
+// ===== CONFIG =====
+window.FAMI_CONFIG = window.FAMI_CONFIG || {
+  SUPABASE_URL: 'https://your-project-ref.supabase.co',
+  SUPABASE_ANON_KEY: 'your-anon-key'
+};
+
+const supabaseUrl = window.FAMI_CONFIG.SUPABASE_URL;
+const supabaseAnonKey = window.FAMI_CONFIG.SUPABASE_ANON_KEY;
+
+const isConfigured = !!supabaseUrl && !!supabaseAnonKey && supabaseUrl.startsWith('http');
+if (!isConfigured) {
+  window.addEventListener('DOMContentLoaded', () => {
+    const msg = document.getElementById('authMsg');
+    if (msg) {
+      msg.textContent = 'Supabase is not configured yet. Add your VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY environment variables, then refresh.';
+      msg.className = 'notice dangerNotice';
+      msg.classList.remove('hidden');
+    }
+    const btn = document.getElementById('authBtn');
+    if (btn) btn.disabled = true;
+  });
+}
+
+const sb = createClient(supabaseUrl || 'https://placeholder.supabase.co', supabaseAnonKey || 'placeholder-key');
+
+async function boot(){
+  try{
+    const { data } = await sb.auth.getSession();
+    if (data.session) startApp(); else showLogin();
+    sb.auth.onAuthStateChange((event, session) => {
+      if (session) startApp(); else showLogin();
+    });
+  }catch(e){ console.error(e); showLogin(); }
+}
+
+function showLogin(){ document.getElementById('app').classList.add('hidden'); document.getElementById('loginView').classList.remove('hidden'); }
+function startApp(){ document.getElementById('loginView').classList.add('hidden'); document.getElementById('app').classList.remove('hidden'); }
+
+boot();
+</script>
+</body>
+</html>
